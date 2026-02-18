@@ -30,7 +30,7 @@ jobs:
         run: docker pull luvsharma7/wallet-app:latest
 
       - name: Deploy to EC2
-        run: appleboy/ssh-action@main
+        uses: appleboy/ssh-action@main
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
