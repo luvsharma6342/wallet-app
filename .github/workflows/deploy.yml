@@ -40,3 +40,4 @@ jobs:
             sudo docker stop wallet-app || true
             sudo docker rm wallet-app || true
             sudo docker run -d --name wallet-app -p 3005:3000 luvsharma7/wallet-app:latest
+            
